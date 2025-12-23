@@ -2,7 +2,6 @@ package dev.ngb.base_stack.application.command.dispatcher;
 
 import dev.ngb.base_stack.application.command.Command;
 import dev.ngb.base_stack.application.command.hander.CommandHandler;
-import dev.ngb.base_stack.application.shared.ApplicationService;
 
 /**
  * Dispatches {@link Command commands} to their corresponding handlers.
@@ -13,7 +12,7 @@ import dev.ngb.base_stack.application.shared.ApplicationService;
  *
  * @see CommandHandler
  */
-public interface CommandBus extends ApplicationService {
+public interface CommandBus {
     /**
      * Dispatches the given command for handling.
      *

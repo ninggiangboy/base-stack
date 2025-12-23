@@ -7,9 +7,9 @@ package dev.ngb.base_stack.application.command.dto;
  * need to return its generated identifier.
  *
  * @param <ID> the type of the identifier
- * @param id   the generated or resulting identifier
+ * @param value   the generated or resulting identifier
  */
 public record IdResult<ID>(
-        ID id
+        ID value
 ) {
 }
