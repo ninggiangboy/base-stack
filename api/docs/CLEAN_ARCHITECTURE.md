@@ -41,7 +41,7 @@ module
 │       ├── port
 │       └── ApplicationService.java
 │
-├── interface
+├── interfaces
 │   ├── rest
 │   ├── graphql
 │   └── internal

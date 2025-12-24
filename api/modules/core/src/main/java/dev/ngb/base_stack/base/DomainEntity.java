@@ -24,6 +24,22 @@ public abstract class DomainEntity<ID> {
     protected Instant createdAt;
     protected Instant updatedAt;
 
+    protected void reconstruct(
+            ID id,
+            Integer version,
+            UUID createdBy,
+            UUID updatedBy,
+            Instant createdAt,
+            Instant updatedAt
+    ) {
+        this.id = id;
+        this.version = version;
+        this.createdBy = createdBy;
+        this.updatedBy = updatedBy;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
     /**
      * Compares this entity to another object based on identity.
      *
